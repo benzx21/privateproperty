@@ -4,7 +4,7 @@ Feature: Searching for Repossesed Properties
   Scenario Outline: Seaching for repossesed properties
     Given As a user I launch the private property web page
     When I enter the Suburb "<Suburb>"
-    And I click Seach Tab
+    And I click Search Tab
     And I click bank repossessed tab
     And I click Gauteng tab
     And I unticked houses checkbox

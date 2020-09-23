@@ -20,8 +20,8 @@ public class BondCalculatorSteps extends BaseClass{
         Assert.assertTrue("Enter Suburb",homePage.captureSuburbField(suburb));
 
     }
-    @And("^I click Seach Tab$")
-    public void iClickSeachTab() {
+    @And("^I click Search Tab$")
+    public void iClickSearchTab() {
         HomePage homePage = new HomePage(driver);
         Assert.assertTrue("Click Search Tab",homePage.clickSearchTab());
     }
@@ -32,8 +32,8 @@ public class BondCalculatorSteps extends BaseClass{
         Assert.assertTrue("Click bond calculator tab",letsFindRightMatchPage.clickbondcalculatortab());
     }
 
-    @And("^I capture Purchae Price \"([^\"]*)\"$")
-    public void iCapturePurchaePrice(String price) {
+    @And("^I capture Purchase Price \"([^\"]*)\"$")
+    public void iCapturePurchasePrice(String price) {
         BondRepaymentCalculatorPage bondRepaymentCalculatorPage = new BondRepaymentCalculatorPage(driver);
         Assert.assertTrue("Capture Purchase Price ",bondRepaymentCalculatorPage.capturePurchasePrice(price));
 

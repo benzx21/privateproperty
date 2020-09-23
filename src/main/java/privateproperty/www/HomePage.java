@@ -11,11 +11,12 @@ public class HomePage extends CommonMethods {
     }
     @FindBy(xpath = " //*[@id=\"homePageAutoComplete\"]/div/div/div/div[2]/form/div/input[1]")
     private WebElement txtSuburb;
-    //*[@id="homePageAutoComplete"]/div/div/div/div[2]/form/div/div/div[1]/span[1]
     @FindBy(xpath = "//*[@id=\"homePageAutoComplete\"]/div/div/div/div[2]/form/div/button")
     private WebElement btnSearch;
     @FindBy(xpath = "//*[@id=\"desktop\"]/footer/div[1]/div[1]/ul/li[7]/a")
     private WebElement bankRepossesions;
+    @FindBy(xpath = "//*[@id=\"homePageAutoComplete\"]/div/div/div/div[1]/ul/li[3]/a")
+    private WebElement btnDevelopment;
 
     public boolean captureSuburbField(String suburb){
         if(waitForElementToBeVisible(txtSuburb)){
@@ -34,6 +35,14 @@ public class HomePage extends CommonMethods {
     public boolean clickBankRepossessionsTab(){
         if(waitForElementToBeVisible(bankRepossesions)){
             clickElement(bankRepossesions);
+            return true;
+
+        }
+        return false;
+    }
+    public boolean clickDevelopmentTab(){
+        if(waitForElementToBeVisible(btnDevelopment)){
+            clickElement(btnDevelopment);
             return true;
 
         }

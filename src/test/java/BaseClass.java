@@ -32,6 +32,7 @@ public class BaseClass {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "Drivers" + File.separator + "chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("useAutomationExtension", false);
+        options.addArguments("--incognito");
 
         driver = new ChromeDriver(options);
         driver.get(url);
