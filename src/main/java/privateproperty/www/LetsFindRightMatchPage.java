@@ -14,7 +14,10 @@ public class LetsFindRightMatchPage extends CommonMethods {
     @FindBy(xpath = "//*[@id=\"desktop\"]/footer/div[1]/div[3]/ul/li[4]/a")
     private WebElement affordabilityCalculatorTab;
 
-    public boolean clickbondcalculatortab(){
+    @FindBy(xpath = "//*[@id=\"desktop\"]/footer/div[1]/div[1]/ul/li[4]/a")
+    private WebElement developmentsTab;
+
+    public boolean clickBondcalculatortab(){
         if(waitForElementToBeVisible(bondCalculatorTab)){
             clickElement(bondCalculatorTab);
             return true;
@@ -25,6 +28,13 @@ public class LetsFindRightMatchPage extends CommonMethods {
     public boolean clickAffordabilityCalculatorTab(){
         if(waitForElementToBeVisible(affordabilityCalculatorTab)){
             clickElement(affordabilityCalculatorTab);
+            return true;
+        }
+        return false;
+    }
+    public boolean clickDevelopmentTab(){
+        if (waitForElementToBeVisible(developmentsTab)){
+            clickElement(developmentsTab);
             return true;
         }
         return false;

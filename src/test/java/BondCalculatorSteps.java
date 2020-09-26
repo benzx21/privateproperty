@@ -29,7 +29,7 @@ public class BondCalculatorSteps extends BaseClass{
     @And("^I click bond calculator tab$")
     public void iClickBondCalculatorTab() {
         LetsFindRightMatchPage letsFindRightMatchPage = new LetsFindRightMatchPage(driver);
-        Assert.assertTrue("Click bond calculator tab",letsFindRightMatchPage.clickbondcalculatortab());
+        Assert.assertTrue("Click bond calculator tab",letsFindRightMatchPage.clickBondcalculatortab());
     }
 
     @And("^I capture Purchase Price \"([^\"]*)\"$")

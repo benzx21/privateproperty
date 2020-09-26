@@ -24,11 +24,4 @@ public class Developments extends CommonMethods {
         return false;
     }
 
-    public boolean clickCapeTownDevelopmentsTab() {
-        if (waitForElementToBeVisible(capeTownTab)) {
-            clickElement(capeTownTab);
-            return true;
-        }
-        return false;
-    }
-}
+   }
