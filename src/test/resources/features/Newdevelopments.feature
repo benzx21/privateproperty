@@ -1,7 +1,7 @@
 Feature: New Develelopments
 
 @NewDevelopments
-Scenario Outline: Seaching for repossesed properties
+Scenario Outline: Seaching for new developments projects in CapeTown
 Given As a user I launch the private property web page
 When I enter the Suburb "<Suburb>"
   And I click Search Tab
