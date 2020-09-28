@@ -1,5 +1,6 @@
 package privateproperty.www;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,6 +12,8 @@ public class HomePage extends CommonMethods {
     }
     @FindBy(xpath = " //*[@id=\"homePageAutoComplete\"]/div/div/div/div[2]/form/div/input[1]")
     private WebElement txtSuburb;
+    @FindBy(xpath = " //*[@id=\"homePageAutoComplete\"]/div/div/div/div[2]/form/div/input[1]")
+    private WebElement txtProvince;
     @FindBy(xpath = "//*[@id=\"homePageAutoComplete\"]/div/div/div/div[2]/form/div/button")
     private WebElement btnSearch;
     @FindBy(xpath = "//*[@id=\"desktop\"]/footer/div[1]/div[1]/ul/li[7]/a")
@@ -21,6 +24,15 @@ public class HomePage extends CommonMethods {
     public boolean captureSuburbField(String suburb){
         if(waitForElementToBeVisible(txtSuburb)){
             captureText(txtSuburb,suburb);
+            return true;
+        }
+        return false;
+    }
+    public boolean captureProvinceField(String province) {
+        if (waitForElementToBeVisible(txtProvince)){
+            captureText(txtProvince, province);
+            txtSuburb.sendKeys(Keys.ARROW_DOWN);
+            txtSuburb.sendKeys(Keys.ENTER);
             return true;
         }
         return false;
