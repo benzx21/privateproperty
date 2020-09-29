@@ -10,15 +10,15 @@ public class HomePage extends CommonMethods {
     public HomePage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = " //*[@id=\"homePageAutoComplete\"]/div/div/div/div[2]/form/div/input[1]")
+    @FindBy(xpath = "//input[@name='locationPhrase']")
     private WebElement txtSuburb;
-    @FindBy(xpath = " //*[@id=\"homePageAutoComplete\"]/div/div/div/div[2]/form/div/input[1]")
+    @FindBy(xpath = "//input[@name='locationPhrase']")
     private WebElement txtProvince;
-    @FindBy(xpath = "//*[@id=\"homePageAutoComplete\"]/div/div/div/div[2]/form/div/button")
+    @FindBy(xpath = "//button[@name='search']")
     private WebElement btnSearch;
-    @FindBy(xpath = "//*[@id=\"desktop\"]/footer/div[1]/div[1]/ul/li[7]/a")
+    @FindBy(xpath = "//a[text()='Bank Repossessions']")
     private WebElement bankRepossesions;
-    @FindBy(xpath = "//*[@id=\"homePageAutoComplete\"]/div/div/div/div[1]/ul/li[3]/a")
+    @FindBy(xpath = "//a[text()='Developments']")
     private WebElement btnDevelopment;
 
     public boolean captureSuburbField(String suburb){

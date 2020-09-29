@@ -9,12 +9,12 @@ public class LetsFindRightMatchPage extends CommonMethods {
     public LetsFindRightMatchPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "//*[@id=\"desktop\"]/footer/div[1]/div[3]/ul/li[3]/a")
+    @FindBy(xpath = "//a[text()='Bond Calculator']")
     private WebElement bondCalculatorTab;
-    @FindBy(xpath = "//*[@id=\"desktop\"]/footer/div[1]/div[3]/ul/li[4]/a")
+    @FindBy(xpath = "//a[text()='Affordability Calculator']")
     private WebElement affordabilityCalculatorTab;
 
-    @FindBy(xpath = "//*[@id=\"desktop\"]/footer/div[1]/div[1]/ul/li[4]/a")
+    @FindBy(xpath = "//a[text()='Developments']")
     private WebElement developmentsTab;
 
     public boolean clickBondcalculatortab(){

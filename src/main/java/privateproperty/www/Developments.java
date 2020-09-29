@@ -10,7 +10,7 @@ public class Developments extends CommonMethods {
         super(driver);
     }
 
-    @FindBy(xpath = "//*[@id=\"provinceSelectorContainer\"]/a[1]/div[1]/span")
+    @FindBy(xpath = "//span[text()='Western Cape']")
     private WebElement westerCapeTab;
 
     @FindBy(xpath = "//*[@id=\"developmentResults\"]/div/div/div[2]/div[2]/div[1]/ul/li[4]/a")
