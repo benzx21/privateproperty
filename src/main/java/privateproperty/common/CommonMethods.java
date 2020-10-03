@@ -50,6 +50,8 @@ public class CommonMethods {
             logger.info("Element not successfully captured");
             return false;
         }
+
+
     }
 
 }

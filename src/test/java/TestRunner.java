@@ -12,7 +12,7 @@ import java.util.Calendar;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/resources/features"},
-        tags = {"@RepossesedProperties"},
+        tags = {"@AffordabilityCalculator"},
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/privatepropertyReport.html"},
         monochrome = true
 )

@@ -12,7 +12,7 @@ public class BankPropertiesForSalePage extends CommonMethods {
 
     @FindBy(xpath = "//span[text()='Gauteng']")
     private WebElement gautengtab;
-    @FindBy(xpath = "//*[@id=\"sidePanelResultsFiltersContainer\"]/div/div/div[1]/div[2]/div[3]/div/div[1]/div[1]/div")
+    @FindBy(xpath = "//div[text()='Houses']")
     private WebElement houseschekbox;
     @FindBy(xpath = "//*[@id=\"sidePanelResultsFiltersContainer\"]/div/div/div[1]/div[2]/div[3]/div/div[4]/div[1]/div")
     private WebElement landchekbox;

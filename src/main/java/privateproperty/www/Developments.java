@@ -13,7 +13,7 @@ public class Developments extends CommonMethods {
     @FindBy(xpath = "//span[text()='Western Cape']")
     private WebElement westerCapeTab;
 
-    @FindBy(xpath = "//*[@id=\"developmentResults\"]/div/div/div[2]/div[2]/div[1]/ul/li[4]/a")
+    @FindBy(xpath = "//*[@id=\"developmentResults\"]/div/div/div[2]/div[2]/div[1]/ul/li[3]/a")
     private WebElement capeTownTab;
 
     public boolean clickWesternCapeDevelopmentsTab() {

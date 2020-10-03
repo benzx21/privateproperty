@@ -7,7 +7,7 @@ When I enter the Suburb "<Suburb>"
   And I click Search Tab
   And I click Development Tab
   And I click Western Cape Tab
-  And I click Capetown Tab
+  #And I click Capetown Tab
 
   Examples:
     | Suburb      |
