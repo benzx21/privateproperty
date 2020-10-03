@@ -7,4 +7,4 @@ Feature:Search Province
     #And I click Search Tab
     Examples:
       | Province |
-      |Limpopo   |
+      |NorthWest   |
