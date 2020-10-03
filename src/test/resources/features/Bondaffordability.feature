@@ -15,4 +15,4 @@ And I click Calculate Tab
 
 Examples:
 |Suburb      |GrossIncome|NetIncome|TotalExpenses|AffordabilityInterestRate|
-|Gauteng     |  100000  |75000    | 23600        | 10                      |
+|Gauteng     |  2000000  |98000  | 23600        | 7.5                    |
